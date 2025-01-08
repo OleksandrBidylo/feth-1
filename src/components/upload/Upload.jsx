@@ -23,7 +23,7 @@ const Upload = ({ onSendData }) => {
     name: Yup.string()
       .min(3, "Too short name !")
       .max(25, "Too long name !")
-      .required(),
+      .required("Name is required"),
     email: Yup.string()
       .min(3, "Too short email !")
       .max(25, "Too long email !")
@@ -162,8 +162,12 @@ const Upload = ({ onSendData }) => {
                   name="photo"
                   onChange={(e) => handleFileChange(e, setFieldValue)}
                 />
-
-                <label className="mb-2">Full Name</label>
+                <ErrorMessage
+                  name="name"
+                  component="div"
+                  className="text-red-500 mb-2  "
+                />
+                {!errors.name && <label className="mb-2">Full Name</label>}
                 <Field
                   style={{
                     width: 460,
