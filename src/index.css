@@ -29,3 +29,22 @@
   font-weight: 800;
   font-style: normal;
 }
+
+.button-cr {
+  transition: 0, 8s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.button-cr:hover {
+  background-color: rgba(255, 255, 255, 0.164);
+}
+.bg-cr {
+  transition: 0, 8s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.bg-cr:hover {
+  background-color: rgba(255, 255, 255, 0.164);
+}

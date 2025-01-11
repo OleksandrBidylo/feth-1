@@ -7,6 +7,8 @@ import Circle2 from "./components/circles/Circle2";
 import Upload from "./components/upload/Upload";
 import Hero from "./components/hero/Hero";
 import { useState } from "react";
+import SquigglyLinesBot from "./components/squiggly-lines/SquigglyLinesBot";
+import SquigglyLinesTop from "./components/squiggly-lines/SquigglyLinesTop";
 
 function App() {
   const [parentData, setParentData] = useState({
@@ -19,7 +21,7 @@ function App() {
   };
   return (
     <div
-      className="bg-cover bg-center h-screen w-full z-0 font-custom text-white"
+      className="bg-cover bg-center min-h-screen w-full z-0 font-custom text-white relative"
       style={{
         backgroundImage: `url(${bgImgDesktop})`,
       }}
@@ -27,6 +29,8 @@ function App() {
       <Header />
       <Circle1 />
       <Circle2 />
+      <SquigglyLinesBot />
+      <SquigglyLinesTop />
       <Hero submited={parentData.submited} formData={parentData.formData} />
       <Upload onSendData={handleDataFromChild} />
       <Lines />

@@ -2,7 +2,7 @@ const Hero = ({ submited, formData }) => {
   return (
     <div className="justify-center flex flex-col items-center gap-5 mt-16 text-center">
       {submited === false && (
-        <h1 className="text-5xl text-wrap max-w-xl font-extrabold">
+        <h1 className="text-5xl text-wrap max-w-2xl font-extrabold ">
           Your Journey to Coding Conf 2025 Starts Here!
         </h1>
       )}
