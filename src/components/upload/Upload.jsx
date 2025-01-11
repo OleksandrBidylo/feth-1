@@ -194,7 +194,7 @@ const Upload = ({ onSendData }) => {
                 ) : touched.name && errors.name ? (
                   <div className="text-red-500 mb-2">{errors.name}</div>
                 ) : (
-                  <label className="mb-2">Name</label>
+                  <label className="mb-2">Full Name</label>
                 )}
                 <Field
                   style={{
@@ -212,7 +212,7 @@ const Upload = ({ onSendData }) => {
                 ) : touched.email && errors.email ? (
                   <div className="text-red-500 mb-2">{errors.email}</div>
                 ) : (
-                  <label className="mb-2">Email</label>
+                  <label className="mb-2">Email Adress</label>
                 )}
                 <Field
                   style={{
